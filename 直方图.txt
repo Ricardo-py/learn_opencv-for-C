@@ -157,8 +157,6 @@ int main()
 		line(histImage, Point((i - 1) * bin_w, hist_h - cvRound(r_hist.at<float>(i - 1))),
 			Point((i)* bin_w, hist_h - cvRound(r_hist.at<float>(i))), Scalar(0, 0, 255), 2, LINE_AA);
 	}
-
-
 	imshow(OUTPUT_TITLE, histImage);
 
 	waitKey();
